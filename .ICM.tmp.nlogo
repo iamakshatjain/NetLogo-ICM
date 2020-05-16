@@ -91,7 +91,7 @@ to cascade
     ; we chose any random node to infect
     ask one-of nodes [
 
-      ; infectedNodes are represented by a red circle
+      ;infectedNodes are represented by a red circle
       set breed infectedNodes
       set color red
       set shape "circle"
@@ -104,11 +104,8 @@ to cascade
         let p random-float 1
 
         ; value of activation-prob is decided by the slider
-        ; we here are considering the probability of activation as same for all node pairs/ties
-        ; we activate the neighbor node based on this probability
+        ; we here are considering the li
         if (p < activation-prob) [
-
-          ; infectedNodes are represented by a red circle
           set breed infectedNodes
           set color red
           set shape "circle"
@@ -132,7 +129,7 @@ to clear-cascade
   ]
 end
 
-;;;;configurations
+;;;;;;;;;;;;configurations
 
 @#$#@#$#@
 GRAPHICS-WINDOW
